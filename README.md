@@ -6,11 +6,15 @@ Steps to reproduce:
     This installs the chromedriver in version 2.24.1 and for the node.js example selenium-webdriver 3.0.0-beta-3.
 
 2. Compile and run the java example. Maven and Java 8 are a prerequisite.
+
     `mvn package exec:java`
+    
     The browser opens, loads Google, but no query is submitted.
 
 3. Run the Javascript example
+
     `export PATH=node_modules/chromedriver/lib/chromedriver:$PATH`
+    
     `node chromedrivertest.js`
     The browser opens, loads Google, but no query is submitted.
 
@@ -18,7 +22,9 @@ Steps to reproduce:
     This actually works as expected! The browser opens, loads Google and searches for ChromeDriver.
 
 5. (Bonus) Remote Webdriver with chromedriver
+
     `./node_modules/chromedriver/lib/chromedriver/chromedriver --verbose`
+    
     Run RemoteChromedriverTest from IntelliJ
     This doesn't work. The output from the logfile is included in the repository here in logfile.txt
 
